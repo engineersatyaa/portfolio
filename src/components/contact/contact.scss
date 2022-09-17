@@ -1,0 +1,143 @@
+.contact {
+  background-color: crimson;
+  display: flex;
+  position: relative;
+  @media screen and (max-width: 426px) {
+    flex-direction: column;
+  }
+
+  .left {
+    // background-color: yellow;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 30px;
+      width: 200px;
+      text-align: center;
+      border-bottom: 3px solid black;
+
+      @media screen and (max-width: 426px) {
+        font-size: 22px;
+        border: none;
+      }
+    }
+
+    .mediaContainer {
+      // background-color: rgb(214, 27, 189);
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: 426px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+
+      .mediaItems {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        text-align: center;
+        overflow: hidden;
+
+        @media screen and (max-width: 426px) {
+          height: 74%;
+        }
+
+        a {
+          img {
+            width: 130%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            right: 15px;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    // background-color: greenyellow;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 426px) {
+      flex: 2;
+    }
+
+    h2 {
+      font-size: 30px;
+      width: 135px;
+      text-align: center;
+      border-bottom: 3px solid black;
+      @media screen and (max-width: 426px) {
+        font-size: 22px;
+        border: none;
+      }
+    }
+
+    form {
+      // background-color: bisque;
+      width: 90%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      @media screen and (max-width: 426px) {
+        height: 90%;
+      }
+
+      input {
+        width: 90%;
+        height: 8%;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      textarea {
+        width: 90%;
+        height: 45%;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      button {
+        width: 28%;
+        height: 30px;
+        color: white;
+        font-weight: 600;
+        background-color: black;
+        border: 2px solid rgb(163, 163, 163);
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+
+        @media screen and (max-width: 690px) {
+          width: 95px;
+        }
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}

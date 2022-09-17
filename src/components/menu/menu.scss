@@ -1,0 +1,44 @@
+.menu {
+  width: 250px;
+  height: 100vh;
+  background-color: #15023a;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+
+  @media screen and (max-width: 426px) {
+    width: 215px;
+  }
+
+  &.active {
+    right: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    width: 60%;
+  }
+
+  li {
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 23px;
+    }
+    &:hover {
+      font-weight: 500;
+    }
+  }
+}
