@@ -5,7 +5,7 @@ Responsive Portfolio App created with the help of React JS, Sass and Material UI
  
 ## Author
 
-- [SATYA PAL SINGH aka SAMEER JADAUN](https://www.naukri.com/mnjuser/profile?id=&orgn=homepage)
+- [SATYA PAL SINGH](https://www.naukri.com/mnjuser/profile?id=&orgn=homepage)
 
 
 ## Demo
